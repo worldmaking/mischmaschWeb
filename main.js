@@ -96,7 +96,7 @@ class App {
       controller.addEventListener('selectend', onSelectEnd);
       controller.addEventListener('squeezestart', onSelectStart);
       controller.addEventListener('squeezeend', onSelectEnd);
-      controller.addEventListener( 'connected', (e) => {
+      controller.addEventListener('connected', (e) => {
         controller.userData.gamepad = e.data.gamepad 
         controller.userData.handedness = e.data.handedness 
       });
@@ -113,7 +113,7 @@ class App {
     this.patch = new Patch()
 
     // try passing a scene to load into patch
-    this.patch.load(simple)
+    this.patch.load(funzo)
     
     this.patch.rebuild(this.scene, this.objects)
     
